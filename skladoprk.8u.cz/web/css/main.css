@@ -1,0 +1,178 @@
+body {
+    background: white;
+}
+
+.menu {
+    background-color: #DCDFD9;
+    text-align: center;
+    height: 56px;
+    padding: 16px 12px;
+}
+
+.menu ul {
+    display: inline-flex;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 2px 2px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu .account {
+    float: right;
+    bottom: 50%;
+}
+
+.menu .navigace {
+    float: left;
+}
+
+.menu .account .login {
+    border-style: solid;
+    border-radius: 24px/24px;
+    border-color: #7BEC0F;
+    background-color: #7BEC0F;
+    color: black;
+    transition: border-color .6s, color .6s, background-color .6s;
+    top: 50%;
+    -ms-transform: translateY(-32%);
+    transform: translateY(-32%);
+    width: 125px;
+    height: 56px;
+}
+
+.menu .account .login:hover {
+    background-color: #4EAF00;
+    border-color: #4EAF00;
+    color: #F0FF00;
+    cursor: pointer;
+}
+
+.menu .account .register {
+    border-style: solid;
+    border-radius: 24px/24px;
+    border-color: #A6DA11;
+    background-color: #A6DA11;
+    color: black;
+    padding: 12px 12px;
+    transition: border-color .6s, color .6s, background-color .6s;
+    top: 50%;
+    -ms-transform: translateY(-32%);
+    transform: translateY(-32%);
+    width: 125px;
+    height: 56px;
+}
+
+.menu .account .register:hover {
+    background-color: #90BD0E;
+    border-color: #90BD0E;
+    color: #F0FF00;
+}
+
+.menu .navigace .obecne {
+    border-style: solid;
+    border-radius: 12px/12px;
+    border-color: #D0CBC7;
+    background-color: #D0CBC7;
+    color: black;
+    padding: 12px 12px;
+    transition: border-color .6s, color .6s, background-color .6s, border-radius .6s;
+}
+
+.menu .navigace .obecne:hover {
+    border-radius: 20px/20px;
+    border-color: #C5C5C4;
+    background-color: #C5C5C4;
+    color: black;
+}
+
+.menu .account .logout {
+    border-style: solid;
+    border-radius: 24px/24px;
+    border-color: #FF2727;
+    background-color: #FF2727;
+    color: black;
+    padding: 12px 12px;
+    transition: border-color .6s, color .6s, background-color .6s;
+}
+
+.menu .account .logout:hover {
+    background-color: #C54C4C;
+    border-color: #C54C4C;
+    color: #FFFFFF;
+}
+
+#login-modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#register-modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal{
+  background-color: #e6ecf0;
+  padding: 10px 0 20px 0;
+  border-radius: 10px;
+  width: 450px;
+  text-align: center;
+}
+
+.top-form{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-form .close-modal{
+  cursor: pointer;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.login-form h2{
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.login-form form input{
+  width: 75%;
+  margin-bottom: 20px;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  border: 1px solid #d0d5d8;
+  border-radius: 3px;
+}
+
+.login-form form button{
+  padding: 12px 0px;
+  width: 75%;
+  background-color: #5dca88;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
